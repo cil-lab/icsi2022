@@ -2,7 +2,9 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This is the official repository of the icsi'2022 benchmark functions. We encourage all researchers to test their algorithms on the ICSI'2022 test suite.  At the same time, we are holding an algorithm competition based on this test set. All researchers who study swarm intelligence algorithms and evolutionary algorithms are welcome to participate in this competition. We will provide generous bonuses as rewards for the excellent contestants in this competition.
+**English** | [中文](README.zh-CN.md)
+
+This is the official repository of the ICSI'2022 benchmark functions. We encourage all researchers to test their algorithms on the ICSI'2022 test suite.  At the same time, we are holding an algorithm competition based on this test set. All researchers who study swarm intelligence algorithms and evolutionary algorithms are welcome to participate in this competition. We will provide generous bonuses as rewards for the excellent contestants in this competition.
 
 Next we will tell you how to install and use the test set.
 
@@ -29,7 +31,7 @@ This repository contains:
 
 ## Background
 
-ICSI is the abbreviation of International  Conference on Swarm Intelligence, which has successfully held 12 sessions so far. This conference is one of the top conferences in the field of swarm intelligence. The 13th International Swarm Intelligence Conference (ICSI’2022) in 2022 will be held in Xi’an, China in July 2022. [website of ICSI'2022](http://iasei.org/icsi2022/)
+ICSI is the abbreviation of International  Conference on Swarm Intelligence, which has successfully held 12 sessions so far. This conference is one of the top conferences in the field of swarm intelligence. The 13th International Swarm Intelligence Conference (ICSI’2022) will be held in Xi’an, China in July 2022. [website of ICSI'2022](http://iasei.org/icsi2022/)
 
 In order to make researchers who study swarm intelligence optimization algorithms and evolutionary algorithms better test their algorithms, we have designed a set of test functions to provide a better test platform. At the same time, we held an algorithm competition based on this test set. All researchers who swarm intelligence algorithms and evolutionary algorithms are welcome to participate in this competition. We will provide generous bonuses as rewards for the excellent contestants in this competition.
 
@@ -109,7 +111,7 @@ to obtain the information of test functions.
 
 [@moshangsang24](https://github.com/moshangsang24)
 
-If you have any problems during use, you can contact me via email [icsi2022@iasei.org] or directly submit issue on github.
+If you have any problems during use, you can contact me via email [icsi2022@iasei.org](icsi2022@iasei.org) or directly submit issue on github.
 
 ## License
 

@@ -55,6 +55,7 @@ mex icsi2022.cpp -DWINDOWS
 First make sure that the following dependencies are installed in the system
 
 ```txt
+Python >= 3.6
 Cython==0.29.23
 matplotlib==3.3.4
 numpy==1.20.1

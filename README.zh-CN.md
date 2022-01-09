@@ -72,6 +72,7 @@ f = icsi2022(x, i)
 首先确保系统中有以下依赖
 
 ```txt
+python>=3.6
 Cython==0.29.23
 matplotlib==3.3.4
 numpy==1.20.1

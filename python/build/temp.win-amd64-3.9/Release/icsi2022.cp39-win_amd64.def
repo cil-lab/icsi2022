@@ -1,0 +1,3 @@
+LIBRARY icsi2022.cp39-win_amd64.pyd
+EXPORTS
+PyInit_icsi2022

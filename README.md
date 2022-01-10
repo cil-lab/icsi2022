@@ -47,7 +47,10 @@ For MATLAB users, please use MATLAB and run following command to compile file [i
 mex icsi2022.cpp -DWINDOWS
 ```
 
-**Note: Please make sure that the compiler supported by MATLAB has been installed in the system.**
+If you can run [test.m](MATLAB/test.m)without any mistake, the compilation is successful.
+
+
+**Note: Please make sure that the compiler supported by MATLAB has been installed in the system. For how to install and use the compiler in MATLAB, please refer to this [website](https://ww2.mathworks.cn/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler).**
 
 
 ### Installation for python
@@ -55,22 +58,36 @@ mex icsi2022.cpp -DWINDOWS
 First make sure that the following dependencies are installed in the system
 
 ```txt
+Python >= 3.6
 Cython==0.29.23
 matplotlib==3.3.4
 numpy==1.20.1
 ```
 
-For Linux users，please run the following command to compile and install
+For Linux users, please run the following command to compile and install
 
 ```sh
 $ bash c.sh
 ```
 
-For Windows users, please make sure you have a suitable compiler in your system.  we recommend to use Microsoft Visual C++ 14.0 or higher. You can run the following command to compile after the compiler has been installed in your system.
+For Windows users, please make sure you have a suitable compiler in your system.  we recommend to use MinGW. You can also use Microsoft Visual C++ 14.0 or higher.
+
+First run the following command to compile after the compiler has been installed in your system.
+
+```sh
+gcc -c icsi2022.c icsi2022.h
+ar rcs libicsi2022.a icsi2022.o
+```
+
+Then run the following command to finish the compilation.
 
 ```sh
 python setup.py build_ext --inplace
 ```
+
+If you can run [check.py](python/check.py)without any mistake, the compilation is successful.
+
+
 
 
 ## Usage

@@ -41,9 +41,9 @@ void cf03 (double *, double *, int ,  int ,double *, int ,double *); /* Composit
 // define for basic operator
 void shiftfunc (double*,double*,int,double*);
 void rotatefunc (double*,double*,int, double*);
-void sr_func (double *, double *, int, double*, double*, double, int, int); /* shift and rotate */
+void shift_rotate (double *, double *, int, double*, double*, double, int, int); /* shift and rotate */
 // composition operator
-void cf_cal2(double *, double *,double *,double *, int);
+void compose(double *, double *,double *,double *, int);
 
 // api
 void ceval(double *x, int nx, int mx, double *f, int func_num0, char * path);

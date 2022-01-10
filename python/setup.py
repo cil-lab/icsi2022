@@ -11,4 +11,4 @@ icsi2022_extension = Extension(
     library_dirs=["lib"],
     include_dirs=["lib"],
 )
-setup(name="icsi2022", ext_modules=cythonize([icsi2022_extension]), include_dirs=[numpy.get_include()])
+setup(name="icsi2022", ext_modules=cythonize([icsi2022_extension]), include_dirs=[numpy.get_include()], compiler_directives={'language_level' : "3"})

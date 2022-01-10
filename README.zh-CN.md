@@ -59,13 +59,14 @@ ICSI 是国际群体智能会议的缩写，到目前为止已经成功举办了
 mex icsi2022.cpp -DWINDOWS
 ```
 
+如果可以正常运行[test.m](MATLAB/test.m)说明编译成功。
 <!-- 然后就可以使用下面的命令使用该数据集。
 
 ```MATLAB
 f = icsi2022(x, i)
 ``` -->
 
-**注意：请先确保系统中已经安装MATLAB支持的编译器。**
+**注意：请先确保系统中已经安装MATLAB支持的编译器。关于如何在MATLAB中安装使用编译器请参考该[网站](https://ww2.mathworks.cn/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler)。**
 
 ### python 支持
 
@@ -84,12 +85,20 @@ numpy==1.20.1
 $ bash c.sh
 ```
 
-对于windows用户，请确保系统中有合适的编译器，推荐使用Microsoft Visual C++ 14.0或更高版本，安装完成后在python文件夹下运行下面的命令完成编译。
+对于windows用户，请确保系统中有合适的编译器，推荐使用MinGW，或者Microsoft Visual C++ 14.0或更高版本，安装完成后首先在 python/lib 文件夹下运行下面的命令编译。
+
+```sh
+gcc -c icsi2022.c icsi2022.h
+ar rcs libicsi2022.a icsi2022.o
+```
+
+然后在python文件夹下运行以下的命令进行编译。
 
 ```sh
 python setup.py build_ext --inplace
 ```
 
+如果可以正常运行[check.py](python/check.py)文件说明编译成功。
 
 
 ## 使用说明

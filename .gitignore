@@ -1,0 +1,9 @@
+*.so
+*.mexw64
+.vscode
+*.pyd
+*.o
+*.a
+*.gch
+*build/temp*
+
